@@ -20,4 +20,12 @@ myArray.forEach((element, index) => {
 });
 console.log(newArray);
 
+// FILTER
 
+// let nomi = myArray.filter((element, index) => {
+//     if (index >= min && index <= max) {
+//         return true;
+//     }
+//     return false;
+// });
+// console.log(nomi);
