@@ -35,11 +35,15 @@ const targa = students.map((element) => {
 
 console.log(targa);
 
-const voto = students.filter((students) => {
-    if (students.grades > 70) {
+const voto = students.filter ((element) => element.grades > 70 );
+
+console.log(voto);
+
+const votoId = students.filter((element) => {
+    if (element.grades > 70 && element.id > 120) {
         return true;
     }
     return false
 });
-
-console.log(voto);
+ 
+console.log(votoId);
