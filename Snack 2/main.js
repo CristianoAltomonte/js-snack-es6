@@ -34,3 +34,12 @@ const targa = students.map((element) => {
 });
 
 console.log(targa);
+
+const voto = students.filter((students) => {
+    if (students.grades > 70) {
+        return true;
+    }
+    return false
+});
+
+console.log(voto);
