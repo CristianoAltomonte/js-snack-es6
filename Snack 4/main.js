@@ -8,12 +8,25 @@
 
 let team = [
 
-{ nome: 'Reggina', puntiFatti:'0', falliSubiti:'0' },
-{ nome: 'Juventus', puntiFatti:'0', falliSubiti:'0' },
-{ nome: 'Milan', puntiFatti:'0', falliSubiti:'0' }
+    { nome: 'Reggina', puntiFatti: '0', falliSubiti: '0' },
+    { nome: 'Juventus', puntiFatti: '0', falliSubiti: '0' },
+    { nome: 'Milan', puntiFatti: '0', falliSubiti: '0' }
 
 ]
 
 
-let numeriRandom= Math.floor(Math.random() * 11);
-console.log(numeriRandom)
+
+
+team.forEach((element) => {
+
+    let punitRandom = Math.floor(Math.random() * 101);
+    let falliRandom = Math.floor(Math.random() * 101);
+
+    element.puntiFatti = punitRandom;
+    element.falliSubiti = falliRandom;
+
+});
+
+console.log(team);
+
+
