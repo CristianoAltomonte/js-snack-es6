@@ -14,9 +14,6 @@ let team = [
 
 ]
 
-
-
-
 team.forEach((element) => {
 
     let punitRandom = Math.floor(Math.random() * 101);
@@ -27,6 +24,14 @@ team.forEach((element) => {
 
 });
 
-console.log(team);
+console.log(team); 
 
+let focusFalli = [];
 
+team.forEach(({ nome, falliSubiti }) => {
+
+    focusFalli.push({ nome,falliSubiti })
+
+})
+
+console.log(focusFalli); 
