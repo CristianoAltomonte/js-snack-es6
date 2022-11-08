@@ -14,4 +14,6 @@ let team = [
 
 ]
 
-console.log(team)
+
+let numeriRandom= Math.floor(Math.random() * 11);
+console.log(numeriRandom)
